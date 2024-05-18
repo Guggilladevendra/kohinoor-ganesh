@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Auto Play image Slider</title>
+<style>
+nav{text-align: center}
+body {
+   
+background-image: url("k.jpg");
+ background-repeat: no-repeat;
+ background-attachment:fixed;
+ background-size:100% 100%;
+background-position: center;
+}
+
+/* Style for images within the <main> tag */
+main img {
+  width: 50%; /* Make the image fill its container */
+  max-width: 300px; /* Limit the maximum width of the image */
+  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+  display: block; /* Make the image a block element */
+  margin:100; /* Center the image horizontally */
+  border-radius: 2px; /* Apply rounded corners to the image */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect to the image */
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.top_nav{
+  width: 200px; /* Adjust the width of the logo image */
+  height: auto;
+  margin-right: 0px; /* Adjust spacing between logo image and text */
+  margin-left: 1150px;
+   margin-top: 0px;
+ margin-bottom: 10px;
+  margin-top: 0px;
+
+}
+marquee{
+text-color: red;
+color:#ff0000;
+}
+#container{
+ display:flex;
+ background-color: ;
+ align-content: center;
+
+}
+#container div{
+background-color:;
+align-items:center;
+margin:20px;
+width:100%;
+
+}
+h1{
+background-image: url("j.jpeg");
+text-color: red;
+color:#000000;
+}
+
+</style>
+
+<title>Google Maps</title>
+<link rel="stylesheet" href="s.css"> <!-- Link to your CSS file -->
+
+
+
+</head>
+
+
+<header>
+
+<div class="top_nav">
+        
+     
+        <ul>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+       
+               <a href="https://www.facebook.com/kohinoor.ganesh.foods?mibextid=ZbWKwL"><button><i class="fab fa-facebook-f"></i></button></a>
+           
+         
+               <button><i class="fab fa-twitter"></i></button>
+            
+               <a href="https://www.instagram.com/kohinoorganesh_foods"><button><i class="fab fa-instagram"></i></button></a>
+            
+               <a href="https://www.youtube.com/@KohinoorGanesh-hg4gl"><button><i class="fab fa-youtube"></i></button></a>
+    </ul>
+     
+</div>
+
+<div class="logo">
+  <img src="kohinoor.png" alt="Logo">
+  <span class="logo-text"></span>
+ <link rel="stylesheet" href="s2.css"> <!-- Link to your CSS file -->
+</div>
+
+
+       <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                 <li><a href="product.html">Products</a></li>
+                <li><a href="l.html">Contact</a></li>
+                <li><a href="sub-d.html">Sub-Distributor</a></li>
+            </ul>
+        </nav>
+    </header>
+<body>
+  <div class="slider">
+
+    <div id="img">
+      <img src="e.jpg">
+    </div>
+
+  </div>
+
+  <script>
+
+    var images = ['a.jpg', 'b.jpg', 'c.jpg'];
+
+    var x = 0;
+
+    var imgs = document.getElementById('img');
+
+    setInterval(slider, 2000);
+
+
+    function slider() {
+
+      if (x < images.length) {
+        x = x + 1;
+      } else {
+        x = 1;
+      }
+
+
+      imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+
+
+    }
+
+
+  </script>
+
+
+  <style type="text/css">
+    .slider {
+      width: 100%;
+      height: 500px;
+      margin: 20px auto;
+      box-sizing: border-box;
+      overflow: hidden;
+      box-shadow: 5px 5px 10px grey;
+
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      animation: ani 2s linear;
+
+    }
+
+    @keyframes ani {
+      0% {
+        transform: scale(1.2);
+      }
+      10% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  </style>
+<br>
+<h1 align="center">Our Products</h1>
+<div id="container">
+<div>
+<img src="turmteam.png" alt="Logo">
+<h3 align="center">Turmeric Powder</h3>
+</div>
+<div>
+<img src="corteam.png" alt="Logo">
+<h3 align="center">Coriander Powder</h3>
+</div>
+<div>
+<img src="chiliteam.png" alt="Logo">
+<h3 align="center">Chilly Powder</h3>
+</div>
+</div><br>
+<marquee>Tripura Foods Pvt.Ltd </marquee>
+
+<footer>
+<div id="container">
+<div>
+<h2> Office Address</h2><br>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<i class="fa-solid fa-location-dot"></i>
+</i><strong>Address:</strong>
+Rajampet Road, Anjaneya swamy circle,
+   Sanipaya, Annamayya(Dist),Andhra Pradesh,
+India,Pincode:51613,.<br>
+<br><i class="fa-solid fa-phone"></i><strong>Phone:</strong> (+91) 8555894964,(+91)7989790053<br>
+</div>
+<div>
+<h3>Useful Links</h3><br>
+<nav>
+            <ul>
+                  <li><a href="product.html">Products</a></li><br>
+                <li><a href="about.html">About</a></li><br>
+                <li><a href="l.html">Contact</a></li><br>
+                <li><a href="sub-d.html">Sub-Distributor</a></li><br>
+            </ul>
+        </nav>
+
+</div>
+<div>
+<h3>Social Media</h3><br> 
+<ul>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+       
+               <a href="https://www.facebook.com/kohinoor.ganesh.foods?mibextid=ZbWKwL"><button><i class="fab fa-facebook-f"></i></button></a><br>
+               <span>Facebook</span><br>
+               <button><i class="fab fa-twitter"></i></button><br>
+               <span>Twitter</span><br>
+               <a href="https://www.instagram.com/kohinoorganesh_foods"><button><i class="fab fa-instagram"></i></button></a><br>
+               <span>Instagram</span><br>
+               <a href="https://www.youtube.com/@KohinoorGanesh-hg4gl"><button><i class="fab fa-youtube"></i></button></a><br>
+               <span>Youtube</span><br>
+
+</ul>
+</div>
+     </div>
+  <p>&copy; 2024 Tripura Foods Pvt.Ltd .</p>
+
+    </footer>
+
+
+</body>
+
+</html>
